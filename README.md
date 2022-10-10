@@ -1,7 +1,7 @@
 ### AWS Amplified React JS, Node JS application, API Gateway and Lambda function to host RESTAPI.
 This project is an AWS Amplify Application using React JS, Node JS combined with an API Gateway endpoint and a LAMBDA Function to host the REST API. In other words I used the amazon web service - AWS amplify to build a full stack application, on the front end i used react js, for the backend i used node js combined with an API Gateway endpoint and a lambda function to host the rest API
 
-#### ***Olatunde AKA Sugardaddy LOL**
+#### ***Project by Olatunde AKA Sugardaddy LOL**
 
 To achieve this you will need to have; NPM, git, amplify CLI and Node packages, installed on your VSCode, an Aws account, and a github account. 
 
