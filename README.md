@@ -1,3 +1,12 @@
+### AWS Amplified React JS, Node JS application, API Gateway and Lambda function to host RESTAPI.
+This project is an AWS Amplify Application using React JS, Node JS combined with an API Gateway endpoint and a LAMBDA Function to host the REST API. In other words I used the amazon web service - AWS amplify to build a full stack application, on the front end i used react js, for the backend i used node js combined with an API Gateway endpoint and a lambda function to host the rest API
+
+#### ***Olatunde AKA Sugardaddy LOL**
+
+To achieve this you will need to have; NPM, git, amplify CLI and Node packages, installed on your VSCode, an Aws account, and a github account. 
+
+STEPS
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -14,57 +23,75 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+Next Step 
+### Initiate Amplify 
+### `amplify init`
+make sure you run this command from the root of your app directory
+>>> enter a name for the project: (awsamplifyapp) 'you can leave as default by pressing enter'
+>>>enter a name for the enviroment: Dev 'you can leave as default by pressing enter'
+>>>choose your default editor:(use arrow keys)
+>Visual studio
+Atom Editor
+Sublime Text
+Intellij IDEA
+im
+Emacs
+None
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+'if youre using visual studio like i did make use of the arrow on your keyboard to select it'
+>>>choose the type of app youre building (use arrow keys)
+andriod
+ios
+>javascript 'for this project we used javascript'
+>>>what javascript framework are you using
+angular
+ember
+ionic
+react
+react-native
+vue
+none
+>>>source directory path: src
+distribution directory path:(build)
+build command:npm.cmd.run-script build
+start command: (npm.cmd run-script start)
+using default provider: awscloudfoundation
 
-### `npm run build`
+its then going to ask you for the AWS profile you want to use kindly selet whatever profile you have on AWS 
+the backend will be immidiately created from here.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Next Step 
+### Create API
+### `amplify add api`
+This command will create a backend API but befoe then you will be promted with a few questions ike;
+>>>select from the below mwneitoned service:(use arrow keys)
+GraphQL
+>REST API (since we are making use of the Rest API we will select this)
+>>>provide a friendly name for your resource to be used as lable for this category in the project: api245435fv (this can be left on default by just hitting the enter key)
+>>>provide a path: /customers/{customerId} or this project i just used customers
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+follow the steps to select the values needed. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Next Step 
+### Edit Backend Src and Index files to fit project. 
+### `all files can be found in github repository`
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Next Step 
+### Pull backend enviroment dev from the cloud 
+### `amplify push`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+this command displays whats going on in AWS Cloud 
+and asks if you want to continue
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
